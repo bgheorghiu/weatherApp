@@ -6,31 +6,32 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.14.0 <3.0.0"
+  flutter: ">=2.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.0
   http:
-  built_value: ^7.0.1
-  built_collection: ^4.3.2
+  built_value: ^8.1.2
+  built_collection: ^5.1.1
   flutter_swiper: ^1.1.6
-  redux: ^4.0.0+3
-  flutter_redux: ^0.7.0
-  freezed_annotation: ^0.12.0
+  redux: ^5.0.0
+  freezed_annotation: ^0.15.0
 
-  redux_epics: ^0.14.0
-  rxdart: any
+  flutter_redux: ^0.8.2
+  redux_epics: ^0.15.0
+
 dependency_overrides:
-  analyzer: ^0.41.1
+  rxdart: ^0.27.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  build_runner: ^1.10.1
-  built_value_generator: ^7.1.0
-  freezed: any
-
+  build_runner: ^2.1.4
+  built_value_generator: ^8.1.2
+  freezed: ^0.15.0+1
 
 flutter:
   uses-material-design: true

@@ -1,16 +1,22 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
+import 'package:weatherapp/actions/index.dart';
 import 'package:weatherapp/containers/city_container.dart';
 import 'package:weatherapp/containers/is_loading_container.dart';
 import 'package:weatherapp/containers/query_container.dart';
-import 'package:weatherapp/actions/index.dart';
 import 'package:weatherapp/models/index.dart';
 
-String inputText;
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key key}) : super(key: key);
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
+
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  String? inputText;
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +45,7 @@ class HomePage extends StatelessWidget {
                         IconButton(
                           onPressed: () {
                             StoreProvider.of<AppState>(context)
-                              ..dispatch(UpdateQuery(inputText))
+                              ..dispatch(UpdateQuery(inputText ?? ''))
                               ..dispatch(UpdateQuery(StoreProvider.of<AppState>(context).state.query))
                               ..dispatch(const GetCity());
                           },

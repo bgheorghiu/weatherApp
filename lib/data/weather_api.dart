@@ -1,13 +1,10 @@
 import 'dart:convert';
 
-import 'package:weatherapp/models/index.dart';
 import 'package:http/http.dart';
-import 'package:meta/meta.dart';
+import 'package:weatherapp/models/index.dart';
 
 class WeatherApi {
-  const WeatherApi({@required Client client})
-      : assert(client != null),
-        _client = client;
+  const WeatherApi({required Client client}) : _client = client;
 
   final Client _client;
 

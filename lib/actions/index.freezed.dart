@@ -69,8 +69,7 @@ mixin _$GetCity {
 
 /// @nodoc
 abstract class $GetCityCopyWith<$Res> {
-  factory $GetCityCopyWith(GetCity value, $Res Function(GetCity) then) =
-      _$GetCityCopyWithImpl<$Res>;
+  factory $GetCityCopyWith(GetCity value, $Res Function(GetCity) then) = _$GetCityCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -84,16 +83,13 @@ class _$GetCityCopyWithImpl<$Res> implements $GetCityCopyWith<$Res> {
 
 /// @nodoc
 abstract class $GetCityStartCopyWith<$Res> {
-  factory $GetCityStartCopyWith(
-          GetCityStart value, $Res Function(GetCityStart) then) =
+  factory $GetCityStartCopyWith(GetCityStart value, $Res Function(GetCityStart) then) =
       _$GetCityStartCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$GetCityStartCopyWithImpl<$Res> extends _$GetCityCopyWithImpl<$Res>
-    implements $GetCityStartCopyWith<$Res> {
-  _$GetCityStartCopyWithImpl(
-      GetCityStart _value, $Res Function(GetCityStart) _then)
+class _$GetCityStartCopyWithImpl<$Res> extends _$GetCityCopyWithImpl<$Res> implements $GetCityStartCopyWith<$Res> {
+  _$GetCityStartCopyWithImpl(GetCityStart _value, $Res Function(GetCityStart) _then)
       : super(_value, (v) => _then(v as GetCityStart));
 
   @override
@@ -180,8 +176,7 @@ abstract class GetCityStart implements GetCity {
 
 /// @nodoc
 abstract class $GetCitySuccessfulCopyWith<$Res> {
-  factory $GetCitySuccessfulCopyWith(
-          GetCitySuccessful value, $Res Function(GetCitySuccessful) then) =
+  factory $GetCitySuccessfulCopyWith(GetCitySuccessful value, $Res Function(GetCitySuccessful) then) =
       _$GetCitySuccessfulCopyWithImpl<$Res>;
   $Res call({City city});
 }
@@ -189,8 +184,7 @@ abstract class $GetCitySuccessfulCopyWith<$Res> {
 /// @nodoc
 class _$GetCitySuccessfulCopyWithImpl<$Res> extends _$GetCityCopyWithImpl<$Res>
     implements $GetCitySuccessfulCopyWith<$Res> {
-  _$GetCitySuccessfulCopyWithImpl(
-      GetCitySuccessful _value, $Res Function(GetCitySuccessful) _then)
+  _$GetCitySuccessfulCopyWithImpl(GetCitySuccessful _value, $Res Function(GetCitySuccessful) _then)
       : super(_value, (v) => _then(v as GetCitySuccessful));
 
   @override
@@ -222,13 +216,11 @@ class _$GetCitySuccessful implements GetCitySuccessful {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is GetCitySuccessful &&
-            (identical(other.city, city) ||
-                const DeepCollectionEquality().equals(other.city, city)));
+            (identical(other.city, city) || const DeepCollectionEquality().equals(other.city, city)));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(city);
+  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(city);
 
   @override
   $GetCitySuccessfulCopyWith<GetCitySuccessful> get copyWith =>
@@ -300,17 +292,14 @@ abstract class GetCitySuccessful implements GetCity {
 
 /// @nodoc
 abstract class $GetCityErrorCopyWith<$Res> {
-  factory $GetCityErrorCopyWith(
-          GetCityError value, $Res Function(GetCityError) then) =
+  factory $GetCityErrorCopyWith(GetCityError value, $Res Function(GetCityError) then) =
       _$GetCityErrorCopyWithImpl<$Res>;
   $Res call({dynamic error});
 }
 
 /// @nodoc
-class _$GetCityErrorCopyWithImpl<$Res> extends _$GetCityCopyWithImpl<$Res>
-    implements $GetCityErrorCopyWith<$Res> {
-  _$GetCityErrorCopyWithImpl(
-      GetCityError _value, $Res Function(GetCityError) _then)
+class _$GetCityErrorCopyWithImpl<$Res> extends _$GetCityCopyWithImpl<$Res> implements $GetCityErrorCopyWith<$Res> {
+  _$GetCityErrorCopyWithImpl(GetCityError _value, $Res Function(GetCityError) _then)
       : super(_value, (v) => _then(v as GetCityError));
 
   @override
@@ -342,17 +331,14 @@ class _$GetCityError implements GetCityError {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is GetCityError &&
-            (identical(other.error, error) ||
-                const DeepCollectionEquality().equals(other.error, error)));
+            (identical(other.error, error) || const DeepCollectionEquality().equals(other.error, error)));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(error);
+  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(error);
 
   @override
-  $GetCityErrorCopyWith<GetCityError> get copyWith =>
-      _$GetCityErrorCopyWithImpl<GetCityError>(this, _$identity);
+  $GetCityErrorCopyWith<GetCityError> get copyWith => _$GetCityErrorCopyWithImpl<GetCityError>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -443,9 +429,7 @@ mixin _$UpdateQuery {
 
 /// @nodoc
 abstract class $UpdateQueryCopyWith<$Res> {
-  factory $UpdateQueryCopyWith(
-          UpdateQuery value, $Res Function(UpdateQuery) then) =
-      _$UpdateQueryCopyWithImpl<$Res>;
+  factory $UpdateQueryCopyWith(UpdateQuery value, $Res Function(UpdateQuery) then) = _$UpdateQueryCopyWithImpl<$Res>;
   $Res call({String query});
 }
 
@@ -468,20 +452,16 @@ class _$UpdateQueryCopyWithImpl<$Res> implements $UpdateQueryCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$UpdateQueryCopyWith<$Res>
-    implements $UpdateQueryCopyWith<$Res> {
-  factory _$UpdateQueryCopyWith(
-          _UpdateQuery value, $Res Function(_UpdateQuery) then) =
+abstract class _$UpdateQueryCopyWith<$Res> implements $UpdateQueryCopyWith<$Res> {
+  factory _$UpdateQueryCopyWith(_UpdateQuery value, $Res Function(_UpdateQuery) then) =
       __$UpdateQueryCopyWithImpl<$Res>;
   @override
   $Res call({String query});
 }
 
 /// @nodoc
-class __$UpdateQueryCopyWithImpl<$Res> extends _$UpdateQueryCopyWithImpl<$Res>
-    implements _$UpdateQueryCopyWith<$Res> {
-  __$UpdateQueryCopyWithImpl(
-      _UpdateQuery _value, $Res Function(_UpdateQuery) _then)
+class __$UpdateQueryCopyWithImpl<$Res> extends _$UpdateQueryCopyWithImpl<$Res> implements _$UpdateQueryCopyWith<$Res> {
+  __$UpdateQueryCopyWithImpl(_UpdateQuery _value, $Res Function(_UpdateQuery) _then)
       : super(_value, (v) => _then(v as _UpdateQuery));
 
   @override
@@ -513,17 +493,14 @@ class _$_UpdateQuery implements _UpdateQuery {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _UpdateQuery &&
-            (identical(other.query, query) ||
-                const DeepCollectionEquality().equals(other.query, query)));
+            (identical(other.query, query) || const DeepCollectionEquality().equals(other.query, query)));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(query);
+  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(query);
 
   @override
-  _$UpdateQueryCopyWith<_UpdateQuery> get copyWith =>
-      __$UpdateQueryCopyWithImpl<_UpdateQuery>(this, _$identity);
+  _$UpdateQueryCopyWith<_UpdateQuery> get copyWith => __$UpdateQueryCopyWithImpl<_UpdateQuery>(this, _$identity);
 }
 
 abstract class _UpdateQuery implements UpdateQuery {

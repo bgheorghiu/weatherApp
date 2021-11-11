@@ -1,6 +1,6 @@
+import 'package:redux/redux.dart';
 import 'package:weatherapp/actions/index.dart';
 import 'package:weatherapp/models/index.dart';
-import 'package:redux/redux.dart';
 
 Reducer<AppState> reducer = combineReducers(<Reducer<AppState>>[
   TypedReducer<AppState, GetCityStart>(_getCityStart),
@@ -24,6 +24,5 @@ AppState _getCityError(AppState state, GetCityError action) {
 }
 
 AppState _updateQuery(AppState state, UpdateQuery action) {
-  return state.rebuild((AppStateBuilder b) => b
-    ..query = action.query);
+  return state.rebuild((AppStateBuilder b) => b..query = action.query);
 }

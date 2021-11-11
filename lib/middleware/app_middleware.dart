@@ -1,13 +1,10 @@
+import 'package:redux/redux.dart';
+import 'package:weatherapp/actions/index.dart';
 import 'package:weatherapp/data/weather_api.dart';
 import 'package:weatherapp/models/index.dart';
-import 'package:weatherapp/actions/index.dart';
-import 'package:redux/redux.dart';
-import 'package:meta/meta.dart';
 
 class AppMiddleware {
-  AppMiddleware({@required WeatherApi weatherApi})
-      : assert(weatherApi != null),
-        _weatherApi = weatherApi;
+  AppMiddleware({required WeatherApi weatherApi}) : _weatherApi = weatherApi;
 
   final WeatherApi _weatherApi;
 
@@ -23,10 +20,10 @@ class AppMiddleware {
       final City cityInfo = await _weatherApi.getCity(
         store.state.query,
       );
-      final GetCitySuccessful successful = GetCity.successful(cityInfo);
+      final GetCity successful = GetCity.successful(cityInfo);
       store.dispatch(successful);
     } catch (e) {
-      final GetCityError error = GetCity.error(e);
+      final GetCity error = GetCity.error(e);
       store.dispatch(error);
     }
   }

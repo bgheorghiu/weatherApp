@@ -26,7 +26,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key key, @required this.store}) : super(key: key);
+  const MyApp({Key? key, required this.store}) : super(key: key);
 
   final Store<AppState> store;
 
@@ -34,8 +34,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return StoreProvider<AppState>(
       store: store,
-      child: MaterialApp(
-        home: const HomePage(),
+      child: const MaterialApp(
+        home: HomePage(),
       ),
     );
   }
